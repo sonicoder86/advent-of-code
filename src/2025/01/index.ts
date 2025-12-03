@@ -1,6 +1,10 @@
 import { readLines } from "../../utils.js";
-import { calculate } from "./calculate.js";
+import { calculateAtomic } from "./calculate.js";
 
 const lines = readLines(import.meta.url, "input.txt");
 
-console.log(calculate(lines, 50));
+const resultWithEndingZeros = calculateAtomic(lines, 50, true);
+const resultWithAllZeros = calculateAtomic(lines, 50, false);
+
+console.log(`Part 1: ${resultWithEndingZeros}`);
+console.log(`Part 2: ${resultWithAllZeros}`);
