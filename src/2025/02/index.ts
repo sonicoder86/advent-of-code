@@ -1,7 +1,7 @@
-import { readLines } from "../../utils.js";
-import { calculatePart1 } from "./calculate.js";
+import { readLines } from '../../utils.js';
+import { calculatePart1 } from './calculate.js';
 
-const lines = readLines(import.meta.url, "input.txt");
+const lines = readLines(import.meta.url, 'input.txt');
 
 const resultPart1 = calculatePart1(lines);
 

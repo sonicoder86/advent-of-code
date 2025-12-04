@@ -1,25 +1,29 @@
 {
   "name": "advent-of-code",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "vitest"
-  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/sonicoder86/advent-of-code#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sonicoder86/advent-of-code.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/sonicoder86/advent-of-code/issues"
   },
-  "homepage": "https://github.com/sonicoder86/advent-of-code#readme",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^6.4.1",
     "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
     "ts-node": "^10.9.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",

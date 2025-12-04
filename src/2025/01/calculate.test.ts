@@ -1,15 +1,15 @@
-import { describe, it, expect } from "vitest";
-import { readLines } from "../../utils.js";
-import { calculatePart1, calculatePart2 } from "./calculate.js";
+import { describe, expect, it } from 'vitest';
+import { readLines } from '../../utils.js';
+import { calculatePart1, calculatePart2 } from './calculate.js';
 
-const lines = readLines(import.meta.url, "sample.txt");
+const lines = readLines(import.meta.url, 'sample.txt');
 
-describe("Day 01", () => {
-  it("part 1 should return correct result", () => {
+describe('day 01', () => {
+  it('part 1 should return correct result', () => {
     expect(calculatePart1(lines)).toBe(3);
   });
 
-  it("part 2 should return correct result", () => {
+  it('part 2 should return correct result', () => {
     expect(calculatePart2(lines)).toBe(6);
   });
 });

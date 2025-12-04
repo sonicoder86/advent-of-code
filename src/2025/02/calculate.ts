@@ -1,5 +1,5 @@
 export function calculatePart1(lines: string[]): number {
-  const ranges = lines[0].split(",");
+  const ranges = lines[0].split(',');
   const invalidIds: number[] = [];
 
   function isInvalid(id: number): boolean {
@@ -8,9 +8,13 @@ export function calculatePart1(lines: string[]): number {
   }
 
   for (let i = 0; i < ranges.length; i++) {
-    const [rangeStart, rangeEnd] = ranges[i].split("-");
+    const [rangeStart, rangeEnd] = ranges[i].split('-');
 
-    for (let j = parseInt(rangeStart, 10); j <= parseInt(rangeEnd, 10); j++) {
+    for (
+      let j = Number.parseInt(rangeStart, 10);
+      j <= Number.parseInt(rangeEnd, 10);
+      j++
+    ) {
       if (isInvalid(j)) {
         invalidIds.push(j);
       }
