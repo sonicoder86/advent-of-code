@@ -10,11 +10,7 @@ export function calculatePart1(lines: string[]): number {
   for (let i = 0; i < ranges.length; i++) {
     const [rangeStart, rangeEnd] = ranges[i].split('-');
 
-    for (
-      let j = Number.parseInt(rangeStart, 10);
-      j <= Number.parseInt(rangeEnd, 10);
-      j++
-    ) {
+    for (let j = Number.parseInt(rangeStart, 10); j <= Number.parseInt(rangeEnd, 10); j++) {
       if (isInvalid(j)) {
         invalidIds.push(j);
       }
@@ -36,11 +32,7 @@ export function calculatePart2(lines: string[]): number {
   for (let i = 0; i < ranges.length; i++) {
     const [rangeStart, rangeEnd] = ranges[i].split('-');
 
-    for (
-      let j = Number.parseInt(rangeStart, 10);
-      j <= Number.parseInt(rangeEnd, 10);
-      j++
-    ) {
+    for (let j = Number.parseInt(rangeStart, 10); j <= Number.parseInt(rangeEnd, 10); j++) {
       if (isInvalid(j)) {
         invalidIds.push(j);
       }

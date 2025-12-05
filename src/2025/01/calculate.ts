@@ -12,8 +12,7 @@ export function calculatePart1(lines: string[]): number {
         if (position < 0) {
           position = position + 100;
         }
-      }
-      else {
+      } else {
         position++;
         if (position >= 100) {
           position = position - 100;
@@ -43,8 +42,7 @@ export function calculatePart2(lines: string[]): number {
         if (position < 0) {
           position = position + 100;
         }
-      }
-      else {
+      } else {
         position++;
         if (position >= 100) {
           position = position - 100;

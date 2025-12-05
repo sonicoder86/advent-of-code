@@ -6,5 +6,5 @@ export function readLines(importMetaUrl: string, filename: string): string[] {
   const __dirname = dirname(fileURLToPath(importMetaUrl));
   const filePath = join(__dirname, filename);
   const input = readFileSync(filePath, 'utf-8');
-  return input.split('\n').filter(line => line.trim() !== '');
+  return input.split('\n').filter((line) => line.trim() !== '');
 }

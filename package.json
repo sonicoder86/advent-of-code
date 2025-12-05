@@ -16,15 +16,12 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "format": "oxfmt",
     "test": "vitest"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.4.1",
     "@types/node": "^24.10.1",
-    "eslint": "^9.39.1",
-    "ts-node": "^10.9.2",
+    "oxfmt": "^0.16.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.15"
